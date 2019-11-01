@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(monochrome = true,tags = { "@Ideaboard" }, glue = { "Selenium.Cucumber" }, features = {
-		"feature/" }, plugin = { "pretty", "json:target/jsonFolder/cucumber2.json" ,"html:target/htmlFolder/"})
+		"feature/" }, plugin = { "pretty", "json:target/jsonFolder/cucumber3.json" ,"html:target/htmlFolder/"})
 public class Runner3 {
 
 };

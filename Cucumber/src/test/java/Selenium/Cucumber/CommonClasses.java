@@ -16,6 +16,15 @@ public class CommonClasses {
 	
 	static WebDriver driver = Hooks.driver;
 	
+	
+	public String url() throws Throwable {
+		{
+			
+			String url=	ExcelRead2.readURLFromExcel();
+			driver.get(url);
+		}
+		return null;}
+	
 	//Search Product
 	public void search_product() throws Throwable {
 		{
@@ -27,7 +36,7 @@ public class CommonClasses {
 		}}
 
 	public void signin() throws Throwable {
-		
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id='accountLink']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id='signin-email']")).sendKeys("ketan@gmail.com");
@@ -52,16 +61,31 @@ public class CommonClasses {
 		public void shipto() throws Throwable
 		{
 		//Click on ship to link 
-		Thread.sleep(4000);
-		driver.findElement(By.xpath("//a[contains(text(),'Click here')]")).click();
-		
-		JavascriptExecutor scroll1 = (JavascriptExecutor) driver;
-		scroll1.executeScript("window.scrollBy(0,500)", "");
-		Thread.sleep(8000);
-						driver.findElement(By.xpath("//button[@id='ShipToUSA']")).click();
-						Thread.sleep(8000);
+			Thread.sleep(5000);
+		    driver.findElement(By.xpath("//a[contains(text(),'Click here')]")).click();
+		    Thread.sleep(5000);
+			driver.findElement(By.xpath("//button[@id='ShipToUSA']")).click();
+			
 	
 	}
+		public void shipto_Country_change() throws Throwable
+		{
+		//Click on ship to link 
+		driver.findElement(By.xpath("//button[@name='shipToLink']")).click();
+		//Flag
+		driver.findElement(By.xpath("//span[@class='flag flagin']")).click();
+		//Ship to usa 
+		driver.findElement(By.xpath("//button[@id='ShipToUSA']")).click();
+		//Verify ship to modal open 
+		driver.findElement(By.xpath("//img[@class='CountryCurrencyModal_6L9a4R']")).click();
+		//Country
+		driver.findElement(By.xpath("//button[@id='countryDropdown-button']")).click();
+		//select country Algeria
+		driver.findElement(By.xpath("//button[contains(text(),'Algeria')][@index=3]")).click();
+		//Select button update county
+
+	}
+		
 	
 	public void scroll()
 	{

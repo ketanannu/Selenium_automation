@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: Selenium.Cucumber.RunnerReport
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 70.047 s <<< FAILURE! - in Selenium.Cucumber.RunnerReport
+Given Send email to admin(Scenario: Email cucumber to Admin)  Time elapsed: 0.001 s  <<< ERROR!
+org.apache.commons.mail.EmailException: Cannot attach file "C:\Users\ba06875\Desktop\Dataa from Test User\eclipse-workspace\eclipse-workspace\Cucumber\target\CucumberReport\cucumber-html-reports\overview-features.html"
+Caused by: java.io.IOException: "C:\Users\ba06875\Desktop\Dataa from Test User\eclipse-workspace\eclipse-workspace\Cucumber\target\CucumberReport\cucumber-html-reports\overview-features.html" does not exist
+
+Scenario: Email cucumber to Admin  Time elapsed: 0.001 s  <<< ERROR!
+org.apache.commons.mail.EmailException: Cannot attach file "C:\Users\ba06875\Desktop\Dataa from Test User\eclipse-workspace\eclipse-workspace\Cucumber\target\CucumberReport\cucumber-html-reports\overview-features.html"
+Caused by: java.io.IOException: "C:\Users\ba06875\Desktop\Dataa from Test User\eclipse-workspace\eclipse-workspace\Cucumber\target\CucumberReport\cucumber-html-reports\overview-features.html" does not exist
+

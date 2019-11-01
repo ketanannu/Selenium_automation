@@ -13,11 +13,15 @@ import cucumber.api.java.en.When;
 public class StepDefinition_Write_a_Review {
 
 	static WebDriver driver = Hooks.driver;
+	CommonClasses common =  new CommonClasses();
+
+//	public String Url ="https://www.buybuybaby.com/";
 
 	@When("^Signin$")
 	public void signin() throws Throwable {
 		{
-
+			//driver.get(url);
+			Thread.sleep(5000);
 			driver.findElement(By.xpath("//*[@id='accountLink']")).click();
 			Thread.sleep(5000);
 			driver.findElement(By.xpath("//*[@id='signin-email']")).sendKeys("ketan@gmail.com");
@@ -27,13 +31,14 @@ public class StepDefinition_Write_a_Review {
 
 			driver.findElement(By.xpath("//button[@id='signin-submit']")).click();
 			Thread.sleep(5000);
-
+			
 		}
 	}
 
 	@Then("^Search Product$")
 	public void search_product() throws Throwable {
-		{
+		{	
+			Thread.sleep(5000);
 			driver.findElement(By.id("searchInput")).sendKeys("1010233607");
 			Thread.sleep(5000);
 			driver.findElement(By.xpath("//*[@aria-label ='Search']")).click();
@@ -45,16 +50,16 @@ public class StepDefinition_Write_a_Review {
 	@Then("^Write Review$")
 	public void writereview() throws Throwable {
 		{
-
+			Thread.sleep(5000);
 			String str = driver.findElement(By.xpath("//span[text()='Write Review']/../..")).getText();
 			System.out.println(str);
-
+			Thread.sleep(15000);
 			driver.findElement(By.xpath("//span[text()='Write Review']/../..")).click();
 
 			Thread.sleep(15000);
-			driver.findElement(By.xpath("//*[@id='bv-radio-rating-2']")).click();
+			//driver.findElement(By.xpath("//*[@id='bv-radio-rating-2']")).click();
 			Thread.sleep(5000);
-			driver.findElement(By.xpath("//span[@id='bv-radio-rating-2']")).click();
+		driver.findElement(By.xpath("//span[@id='bv-radio-rating-2']")).click();
 			Thread.sleep(15000);
 			System.out.println("Scroll");
 			// fill the form
@@ -67,13 +72,19 @@ public class StepDefinition_Write_a_Review {
 			Thread.sleep(10000);
 			System.out.println("Checking username");
 
-			/*
-			 * WebElement uname =
-			 * driver.findElement(By.xpath("//*[@id='bv-text-field-usernickname']"));
-			 * uname.sendKeys("Ketan");
-			 * 
-			 * driver.findElement(By.id("bv-text-field-userlocation")).sendKeys("Texas");
-			 */
+			/*if(driver.findElement(By.xpath("//*[@id='bv-text-field-usernickname']")).isDisplayed())
+			{
+			  WebElement uname =
+			  driver.findElement(By.xpath("//*[@id='bv-text-field-usernickname']"));
+			  uname.sendKeys("Ketan");
+			  
+			  driver.findElement(By.id("bv-text-field-userlocation")).sendKeys("Texas");
+			}
+			else if (!driver.findElement(By.xpath("//*[@id='bv-text-field-usernickname']")).isDisplayed())
+			{
+				System.out.println("nick name is not asked");
+			}
+			*/
 			WebElement option1 = driver.findElement(By.id("bv-checkbox-reviews-termsAndConditions"));
 			if (option1.isSelected()) {
 				System.out.println("Checkbox is Toggled On");
@@ -97,4 +108,11 @@ public class StepDefinition_Write_a_Review {
 
 		}
 	}
+@When("^Print value$")
+public void value()
+{
+System.out.println("************ EXECUTED***********");
+}
+
 };
+
