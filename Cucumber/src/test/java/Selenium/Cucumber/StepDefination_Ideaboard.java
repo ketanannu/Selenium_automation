@@ -114,12 +114,12 @@ public class StepDefination_Ideaboard {
 		Thread.sleep(12000);
 		JavascriptExecutor scroll11 = (JavascriptExecutor) driver;
 		scroll11.executeScript("window.scrollBy(0,600)", "");
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 			
 
 
 		driver.findElement(By.id("pdp-ideaboard-icon6")).click();
-		Thread.sleep(7000);	
+		Thread.sleep(10000);	
 	
 	}
 

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 52151329308,
+              "duration": 55152248580,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 649239613,
+              "duration": 579498104,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 80414864082,
+              "duration": 79447023567,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 92855690807,
+              "duration": 91634690293,
               "status": "passed"
             },
             "line": 8,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 52244436611,
+              "duration": 52808538367,
               "status": "passed"
             },
             "line": 9,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 59590617609,
+              "duration": 60136319383,
               "status": "passed"
             },
             "line": 10,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 70842730334,
+              "duration": 77228152022,
               "status": "passed"
             },
             "line": 11,
@@ -94,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 5665271112,
+              "duration": 5481626200,
               "status": "passed"
             },
             "embeddings": [

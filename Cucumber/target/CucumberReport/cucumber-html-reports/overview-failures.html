@@ -78,7 +78,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber Report</td>
               <td>1</td>
-            <td>01 Nov 2019, 12:02</td>
+            <td>06 Nov 2019, 13:53</td>
     </tr>
   </tbody>
 </table>
@@ -129,7 +129,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">39.181</span>
+  <span class="lead-duration duration">5.055</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -166,7 +166,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">Hooks.BeforeSteps()</span>
                         
-  <span class="lead-duration duration">56.840</span>
+  <span class="lead-duration duration">55.084</span>
 
           </div>
 
@@ -199,15 +199,46 @@ $(document).ready(function() {
   <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Given</span>
   <span class="name">Signin</span>
   
-  <span class="lead-duration duration">23.618</span>
+  <span class="lead-duration duration">5.055</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a id=&quot;accountLink&quot; data-locator=&quot;accountNav-/store/account/Login&quot; class=&quot;PrimaryLink_1RLwvm inline-block PrimaryLink_uRd4KS&quot; href=&quot;/store/account/Login&quot;&gt;...&lt;/a&gt; is not clickable at point (1138, 77). Other element would receive the click: &lt;div class=&quot;bv-mbox-inner bv-core-container-790 bv-mbox-lightbox&quot;&gt;...&lt;/div&gt;</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a id=&quot;accountLink&quot; data-locator=&quot;accountNav-/store/account/Login&quot; class=&quot;PrimaryLink_1RLwvm inline-block PrimaryLink_uRd4KS&quot; href=&quot;/store/account/Login&quot;&gt;...&lt;/a&gt; is not clickable at point (1138, 77). Other element would receive the click: &lt;div class=&quot;bv-mbox-inner bv-core-container-790 bv-mbox-lightbox&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 39 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'WL2781-0044148', ip: '172.17.15.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61255}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\windows\TEMP\scoped_dir49108_26750}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.120, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 28691481c2fee4d363beaad5ed2bf57c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at Selenium.Cucumber.StepDefinition_Write_a_Review.signin(StepDefinition_Write_a_Review.java:25)
+	at &#10045;.Given Signin(features.feature:6)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -220,50 +251,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Search Product</span>
   
-  <span class="lead-duration duration">15.563</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@elementclicked='Image']&quot;}</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@elementclicked='Image']&quot;}
-  (Session info: chrome=77.0.3865.120)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 25 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'WL2781-0044148', ip: '172.17.10.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62065}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\windows\TEMP\scoped_dir11540_6093}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.120, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 73523dad765162646c859f36e0d33ca1
-*** Element info: {Using=xpath, value=//a[@elementclicked='Image']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Selenium.Cucumber.StepDefinition_Write_a_Review.search_product(StepDefinition_Write_a_Review.java:46)
-	at &#10045;.Then Search Product(features.feature:7)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -318,13 +314,13 @@ Session ID: 73523dad765162646c859f36e0d33ca1
                 <div class="embedding indention">
         <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1523866425.png" download target="_blank">
+      <a href="embeddings/embedding_-1861679355.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-5" class="collapse collapsable-details">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1523866425.png">
+        <img src="embeddings/embedding_-1861679355.png">
       </div>
     </div>
   </div>
@@ -355,7 +351,7 @@ Session ID: 73523dad765162646c859f36e0d33ca1
             <span class="keyword indention">After</span>
                           <span class="location name">Hooks.AfterSteps(Scenario)</span>
                         
-  <span class="lead-duration duration">0.342</span>
+  <span class="lead-duration duration">0.314</span>
 
           </div>
 
@@ -377,25 +373,25 @@ Session ID: 73523dad765162646c859f36e0d33ca1
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_feature4-feature_3.html">SignIn</a>
+      <a href="report-feature_FooterCheck-feature_3.html">Footer Check</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_SignIn.html">@SignIn</a>
+           <a href="report-tag_FooterCheck.html">@FooterCheck</a>
            <a href="report-tag_Run.html">@Run</a>
       </div>
 
   
-  <span class="lead-duration duration">5.046</span>
+  <span class="lead-duration duration">15.176</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify user is able to sign in</span>
+  <span class="name">Email Us, Rebates, To the Trade,Explore Our Other Brands links are present in footer</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -425,7 +421,7 @@ Session ID: 73523dad765162646c859f36e0d33ca1
             <span class="keyword indention">Before</span>
                           <span class="location name">Hooks.BeforeSteps()</span>
                         
-  <span class="lead-duration duration">54.056</span>
+  <span class="lead-duration duration">53.509</span>
 
           </div>
 
@@ -460,9 +456,9 @@ Session ID: 73523dad765162646c859f36e0d33ca1
         
 <div class="brief failed">
   <span class="keyword indention">When</span>
-  <span class="name">User SignIn</span>
+  <span class="name">Email Us, Rebates, To the Trade,Explore Our Other Brands links are present in footer</span>
   
-  <span class="lead-duration duration">5.046</span>
+  <span class="lead-duration duration">15.176</span>
 
   </div>
 
@@ -471,20 +467,20 @@ Session ID: 73523dad765162646c859f36e0d33ca1
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
-          <a>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@data-locator='checkout-crossicon']&quot;}</a>
+          <a>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Email Us')]&quot;}</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@data-locator='checkout-crossicon']&quot;}
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Email Us')]&quot;}
   (Session info: chrome=77.0.3865.120)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 39 milliseconds
+Command duration or timeout: 13 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'WL2781-0044148', ip: '172.17.10.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+System info: host: 'WL2781-0044148', ip: '172.17.15.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:65531}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\windows\TEMP\scoped_dir23268_3648}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.120, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 191d1705dfa244bb71c48abc838c8e93
-*** Element info: {Using=xpath, value=//button[@data-locator='checkout-crossicon']}
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\windows\TEMP\scoped_dir35384_4430}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.120, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 13fc97a605a5f8689bd2dcb02932b803
+*** Element info: {Using=xpath, value=//a[contains(text(),'Email Us')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -496,8 +492,8 @@ Session ID: 191d1705dfa244bb71c48abc838c8e93
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Selenium.Cucumber.Step_defination_signIn.sign_in(Step_defination_signIn.java:19)
-	at &#10045;.When User SignIn(feature4.feature:6)
+	at Selenium.Cucumber.StepDefinition_FooterCheck.signin(StepDefinition_FooterCheck.java:34)
+	at &#10045;.When Email Us, Rebates, To the Trade,Explore Our Other Brands links are present in footer(FooterCheck.feature:9)
 </pre>
       </div>
     </div>
@@ -514,13 +510,13 @@ Session ID: 191d1705dfa244bb71c48abc838c8e93
                 <div class="embedding indention">
         <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_50302272.png" download target="_blank">
+      <a href="embeddings/embedding_-1980213325.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-11" class="collapse collapsable-details">
       <div class="embedding-content">
-        <img src="embeddings/embedding_50302272.png">
+        <img src="embeddings/embedding_-1980213325.png">
       </div>
     </div>
   </div>
@@ -551,7 +547,7 @@ Session ID: 191d1705dfa244bb71c48abc838c8e93
             <span class="keyword indention">After</span>
                           <span class="location name">Hooks.AfterSteps(Scenario)</span>
                         
-  <span class="lead-duration duration">0.378</span>
+  <span class="lead-duration duration">0.363</span>
 
           </div>
 
@@ -573,7 +569,7 @@ Session ID: 191d1705dfa244bb71c48abc838c8e93
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_feature8-feature_6.html">AddToRegistry</a>
+      <a href="report-feature_feature8-feature_9.html">AddToRegistry</a>
     </div>
   
   
@@ -585,7 +581,7 @@ Session ID: 191d1705dfa244bb71c48abc838c8e93
       </div>
 
   
-  <span class="lead-duration duration">8.044</span>
+  <span class="lead-duration duration">1:25.493</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
@@ -622,7 +618,7 @@ Session ID: 191d1705dfa244bb71c48abc838c8e93
             <span class="keyword indention">Before</span>
                           <span class="location name">Hooks.BeforeSteps()</span>
                         
-  <span class="lead-duration duration">57.081</span>
+  <span class="lead-duration duration">55.803</span>
 
           </div>
 
@@ -659,7 +655,7 @@ Session ID: 191d1705dfa244bb71c48abc838c8e93
   <span class="keyword indention">When</span>
   <span class="name">user is able to add product to Registry from PDP page</span>
   
-  <span class="lead-duration duration">8.044</span>
+  <span class="lead-duration duration">1:25.493</span>
 
   </div>
 
@@ -668,20 +664,20 @@ Session ID: 191d1705dfa244bb71c48abc838c8e93
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
-          <a>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Click here')]&quot;}</a>
+          <a>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class='StyledImageList-inline_77jqxN']&quot;}</a>
       </div>
       <div id="msg-16" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Click here')]&quot;}
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class='StyledImageList-inline_77jqxN']&quot;}
   (Session info: chrome=77.0.3865.120)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 32 milliseconds
+Command duration or timeout: 22 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'WL2781-0044148', ip: '172.17.10.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+System info: host: 'WL2781-0044148', ip: '172.17.15.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49680}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\windows\TEMP\scoped_dir25132_15077}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.120, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 99bbea2f87a11a11ca0783db32c3d34e
-*** Element info: {Using=xpath, value=//a[contains(text(),'Click here')]}
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57906}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\windows\TEMP\scoped_dir45556_16300}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.120, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d3e27fa170f3605925bdede01b840445
+*** Element info: {Using=xpath, value=//*[@class='StyledImageList-inline_77jqxN']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -693,7 +689,7 @@ Session ID: 99bbea2f87a11a11ca0783db32c3d34e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Selenium.Cucumber.Step_defination_Add_registry.add_Registry(Step_defination_Add_registry.java:33)
+	at Selenium.Cucumber.Step_defination_Add_registry.add_Registry(Step_defination_Add_registry.java:72)
 	at &#10045;.When user is able to add product to Registry from PDP page(feature8.feature:6)
 </pre>
       </div>
@@ -711,13 +707,13 @@ Session ID: 99bbea2f87a11a11ca0783db32c3d34e
                 <div class="embedding indention">
         <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1858301917.png" download target="_blank">
+      <a href="embeddings/embedding_-574741908.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-17" class="collapse collapsable-details">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1858301917.png">
+        <img src="embeddings/embedding_-574741908.png">
       </div>
     </div>
   </div>
@@ -748,226 +744,7 @@ Session ID: 99bbea2f87a11a11ca0783db32c3d34e
             <span class="keyword indention">After</span>
                           <span class="location name">Hooks.AfterSteps(Scenario)</span>
                         
-  <span class="lead-duration duration">0.401</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_cucumberreport-feature_8.html">Report</a>
-    </div>
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_Report.html">@Report</a>
-           <a href="report-tag_Run.html">@Run</a>
-      </div>
-
-  
-  <span class="lead-duration duration">10.239</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Email cucumber to Admin</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-19" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-20" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">Hooks.BeforeSteps()</span>
-                        
-  <span class="lead-duration duration">59.130</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Given</span>
-  <span class="name">Send email to admin</span>
-  
-  <span class="lead-duration duration">10.239</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
-          <a>org.apache.commons.mail.EmailException: Cannot attach file &quot;C:\Users\ba06875\Desktop\Dataa from Test User\eclipse-workspace\eclipse-workspace\Cucumber\target\CucumberReport\cucumber-html-reports\overview-features.html&quot;</a>
-      </div>
-      <div id="msg-22" class="collapse collapsable-details  in ">
-        <pre>org.apache.commons.mail.EmailException: Cannot attach file &quot;C:\Users\ba06875\Desktop\Dataa from Test User\eclipse-workspace\eclipse-workspace\Cucumber\target\CucumberReport\cucumber-html-reports\overview-features.html&quot;
-	at org.apache.commons.mail.MultiPartEmail.attach(MultiPartEmail.java:333)
-	at Selenium.Cucumber.StepDefinition_Email_Cucumber_Report.email_report(StepDefinition_Email_Cucumber_Report.java:48)
-	at &#10045;.Given Send email to admin(cucumberreport.feature:6)
-Caused by: java.io.IOException: &quot;C:\Users\ba06875\Desktop\Dataa from Test User\eclipse-workspace\eclipse-workspace\Cucumber\target\CucumberReport\cucumber-html-reports\overview-features.html&quot; does not exist
-	at org.apache.commons.mail.MultiPartEmail.attach(MultiPartEmail.java:322)
-	at Selenium.Cucumber.StepDefinition_Email_Cucumber_Report.email_report(StepDefinition_Email_Cucumber_Report.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-23" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-805651313.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-23" class="collapse collapsable-details">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-805651313.png">
-      </div>
-    </div>
-  </div>
-        </div>
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-24" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">Hooks.AfterSteps(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.511</span>
+  <span class="lead-duration duration">0.316</span>
 
           </div>
 

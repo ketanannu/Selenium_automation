@@ -22,6 +22,10 @@ public class Step_defination_ship_to {
 			Thread.sleep(5000);
 			scroll1.executeScript("window.scrollBy(0,3000)", "");
 			Thread.sleep(5000);
+			JavascriptExecutor scroll2 = (JavascriptExecutor) driver;
+			scroll2.executeScript("window.scrollBy(0,1500)", "");
+			Thread.sleep(5000);
+			
 			driver.findElement(By.xpath("//button[@name='shipToLink']")).click();
 			Thread.sleep(25000);
 		

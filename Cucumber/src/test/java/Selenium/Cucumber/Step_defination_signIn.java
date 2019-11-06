@@ -16,7 +16,7 @@ public class Step_defination_signIn {
 			
 	Thread.sleep(5000);
 	 
-	if(driver.findElement(By.xpath("//button[@data-locator='checkout-crossicon']")).isDisplayed())
+	/*if(driver.findElement(By.xpath("//button[@data-locator='checkout-crossicon']")).isDisplayed())
 	 {
 	 driver.findElement(By.xpath("//button[@data-locator='checkout-crossicon']")).
 	  click(); Thread.sleep(5000);
@@ -25,6 +25,7 @@ public class Step_defination_signIn {
 	{
 	System.out.println("Element not found");
 	}
+	*/
 	Thread.sleep(5000);
 	  driver.findElement(By.xpath("//*[@id='accountLink']")).click();
 	Thread.sleep(5000);

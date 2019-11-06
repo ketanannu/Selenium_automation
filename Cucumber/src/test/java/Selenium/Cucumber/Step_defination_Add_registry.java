@@ -27,21 +27,19 @@ public class Step_defination_Add_registry {
 	public void add_Registry() throws Throwable {
 		{
 			Thread.sleep(4000);
-
+			
+			 
 		//	 Click on ship to link
-			Thread.sleep(4000);
-			driver.findElement(By.xpath("//a[contains(text(),'Click here')]")).click();
-
+			Thread.sleep(10000);
+			CommonClasses common =  new CommonClasses();
+			
 			JavascriptExecutor scroll1 = (JavascriptExecutor) driver;
 			scroll1.executeScript("window.scrollBy(0,3000)", "");
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//button[@id='ShipToUSA']")).click();
-			Thread.sleep(8000);
-			driver.findElement(By.xpath("//*[@title='close']")).click();
-			/// Flag
-			Thread.sleep(8000);
-		
-
+			Thread.sleep(2000);
+			JavascriptExecutor scroll2= (JavascriptExecutor) driver;
+			scroll2.executeScript("window.scrollBy(0,1000)", "");
+			Thread.sleep(10000);
+			//common.shipto();
 			driver.findElement(By.xpath("//*[@id='accountLink']")).click();
 			Thread.sleep(5000);
 			driver.findElement(By.xpath("//*[@id='signin-email']")).sendKeys("ketan@gmail.com");
@@ -70,8 +68,10 @@ public class Step_defination_Add_registry {
 
 			// ####Verify user is on create registry page####
 			Thread.sleep(5000);
-			//driver.findElement(By.xpath("//img[@class='StyledImageList-inline_77jqxN']")).click();
-			driver.findElement(By.xpath("//button[@data-locator='atcmodal_viewregistryctabtn']")).click();
+
+			driver.findElement(By.xpath("//*[@class='StyledImageList-inline_77jqxN']")).click();
+           
+			
 			Thread.sleep(5000);
 			{
 
